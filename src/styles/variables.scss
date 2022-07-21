@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+
+$Nunito: "Nunito", sans-serif;
+
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$primary: rgb(245, 245, 245);
+$bg: rgb(255, 255, 255);
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$borderRadius: 12px;
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
